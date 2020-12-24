@@ -1,0 +1,38 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+body{
+    background: url(bg.jpg) no-repeat center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.content{
+    position: absolute;
+    top: 40%;
+    left: 35%;
+}
+
+.content h1{
+    font-size: 60px;
+    margin-bottom: 60px;
+    color: #fff;
+
+}
+
+.content h1::after{
+    content:" A Developer" ;
+    animation: textani 10s linear infinite;
+}
+
+@keyframes textani{
+    30%{
+        content:" A Designer";
+    }
+    60%{
+        content:" A Programmer";
+    }
+}
